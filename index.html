@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blancworld</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="blancw.css">
+<!--css -->    
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="log-o.png" class="logo-img" style="height: auto; width: 50px">
+            Blancworld</div>
+        <div class="actions">
+            <input type="text" placeholder="Search...">
+            <button class="sbutton">Search</button>
+            <button class="lbutton">Login</button>
+        </div>
+    </header>
+
+    <!-- Tabs Section -->
+    <div class="tabs">
+        <button class="active" id="postTab">POST</button>
+        <button id="novelTab">NOVELS</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <!-- Sidebar for Posts -->
+        <div class="sidebar" id="postSidebar">
+            <a href="#">Profile</a>
+            <a href="#">Search</a>
+            <a href="#">Home</a>
+            <a href="#">Messages</a>
+            <a href="#">Notifications</a>
+            <a href="#">Create</a>
+            <a href="#">Explore</a>
+        </div>
+
+        <!-- Post Section -->
+        <div class="content" id="postContent">
+            <!-- Write Post Section -->
+            <div class="post-input">
+                <textarea rows="4" placeholder="Write your post here..."></textarea>
+                <button>Post</button>
+            </div>
+
+            <!-- Post Grid -->
+            <div class="posts">
+                <!-- Example Post -->
+                <div class="post">
+                    <p>This is an example post.</p>
+                    <div class="actions">
+                        <button>Like</button>
+                        <button>Comment</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+
+                <!-- Additional posts can go here -->
+            </div>
+        </div>
+
+        <!-- Sidebar for Novels (hidden by default) -->
+        <div class="sidebar" id="novelSidebar" style="display: none;">
+            <a href="#">Profile</a>
+            <a href="#">Search</a>
+            <a href="#">Authors</a>
+            <a href="#">Write</a>
+            <a href="#">Category</a>
+            <a href="#">Rankings</a>
+        </div>
+
+        <!-- Novel Section (hidden by default) -->
+        <div class="content novels" id="novelContent" style="display: none;">
+            <div class="section">
+                <h3>Weekly Novels</h3>
+                <div class="novel-grid">
+                    <div class="novel-item">Novel 1</div>
+                    <div class="novel-item">Novel 2</div>
+                    <div class="novel-item">Novel 3</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Monthly Novels</h3>
+                <div class="novel-grid">
+                    <div class="novel-item">Novel 4</div>
+                    <div class="novel-item">Novel 5</div>
+                </div>
+            </div>
+
+            <!-- Additional sections for ranking, recent updates, etc. -->
+        </div>
+    </div>
+    <script src="blancsc.js"></script>
+</body>
+</html>
