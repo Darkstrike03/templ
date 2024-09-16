@@ -25,7 +25,7 @@ function checkLoginStatus() {
     // You may replace this with actual login status checking.
 
     // Redirect to login page if not logged in
-    window.location.href = 'auth/login.html';
+    window.location.href = 'auth/logins.html';
 }
 
 // Call the function on page load
