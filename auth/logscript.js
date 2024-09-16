@@ -16,3 +16,17 @@ loginLink.addEventListener('click', function(e) {
     signupContainer.style.display = 'none';
     loginContainer.style.display = 'block';
 });
+// logscript.js
+
+// Function to check login status (placeholder function)
+function checkLoginStatus() {
+    // Here you should implement the logic to check if the user is logged in.
+    // For demonstration, we'll just redirect to the login page.
+    // You may replace this with actual login status checking.
+
+    // Redirect to login page if not logged in
+    window.location.href = 'auth/login.html';
+}
+
+// Call the function on page load
+document.addEventListener('DOMContentLoaded', checkLoginStatus);
