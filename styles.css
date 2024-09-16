@@ -66,14 +66,19 @@ header input[type="text"] {
     border-radius: 3px;
 }
 
-header button {
+.lbutton {
     background: radial-gradient(circle, rgba(0, 0, 0, 0.516), rgba(255, 217, 0, 0.653));
     color: white;
     padding: 5px 10px;
-    border: none;
+    text-decoration: none; /* Remove underline */
     border-radius: 35px;
     cursor: pointer;
     margin-right: 10px;
+    display: inline-block;
+}
+
+.lbutton:hover {
+    background-color: rgba(255, 217, 0, 0.8); /* Slight change on hover */
 }
 
 /* Tabs section */
